@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Audio</title>
+	<style>
+	body{ font-family: Arial; background: #333333; }
+	#container{ max-width: 1200px; margin: 0 auto; }
+	#a1{ display: flex; flex-wrap: wrap; }
+	#a1 p{
+		flex: 25%;
+		padding: 15px 0;
+		text-align: center;
+		font-weight: bold;
+		cursor: pointer;
+		box-sizing: border-box;
+		border: 1px solid #333;
+		color: #fff;
+		margin: 0;
+		background: #ff66cc;
+
+	}
+	#a1 p.act , #a2 p.act , #a1 p:hover{
+		background: #0066ff; color: #fff;
+	}
+	#a2{  display: flex; flex-wrap: wrap; }
+	#a2 p{
+		flex: 50%;
+		padding: 15px 0;
+		text-align: center;
+		font-weight: bold;
+		cursor: pointer;
+		box-sizing: border-box;
+		border: 1px solid #333;
+
+		margin: 0;
+		background: #f7c4d0;
+	}
+
+	#a3{ text-align: justify; background: #ccc; padding: 10px; line-height: 26px; font-size: 16px; overflow-y: scroll; height: 300px; }
+
+</style>
+</head>
+<body>
+
+	<div id="container">
+		<div id="a1">
+			<p data-audio="b/greetings_1-1-1.mp3">Câu chào1-1</p>
+			<p data-audio="b/greetings_1-1-2.mp3">Câu chào1-2</p>
+			<p data-audio="b/greetings_1-1-3.mp3">Câu chào1-3</p>
+			<p data-audio="b/greetings_1-1-4.mp3">Câu chào1-4</p>
+			<p data-audio="b/greetings_2-1-1.mp3">Câu chào2-1</p>
+			<p data-audio="b/greetings_2-1-2.mp3">Câu chào2-2</p>
+			<p data-audio="b/greetings_2-1-3.mp3">Câu chào2-3</p>
+			<p data-audio="b/greetings_2-1-4.mp3">Câu chào2-4</p>
+			<p data-audio="b/greetings_3-1-1.mp3">Câu chào3-1</p>
+			<p data-audio="b/greetings_3-1-2.mp3">Câu chào3-2</p>
+			<p data-audio="b/greetings_3-1-3.mp3">Câu chào3-3</p>
+			<p data-audio="b/greetings_3-1-4.mp3">Câu chào3-4</p>	
+		</div>
+
+		<div id="a3">
+			<audio controls  src=""></audio>
+			<div id="a4"></div>
+		</div>
+
+		<div id="a2">
+
+			<p data-audio="a/48-zg-no-zg.mp3">AUDIO 48 : Trung Cộng Không Phải Là Trung Quốc.</p>
+			<p data-audio="a/47-flg-shiren-shentijiankang.mp3">AUDIO 47: Tập Luyện Pháp Luân Công Giúp Con Người Khỏe Mạnh.</p>
+			<p data-audio="a/46-610zhenmianmu.mp3">AUDIO 46: Bộ Mặt Thật Của Phòng 6.10</p>
+			<p data-audio="a/45-meifo-zaoebao.mp3">AUDIO 45: Tội Diệt Phật Chịu Ác Báo.</p>
+			<p data-audio="a/44-425flg-hepingshangfang-yuanyin.mp3">AUDIO 44: Nguyên Nhân Và Quá Trình Vạn Học Viên Pháp Luân Công Thỉnh Nguyện Ôn Hòa 25 Tháng 4.</p>
+			<p data-audio="a/43-falungong-425-720.mp3">AUDIO 43: Truyền Xuất Của Pháp Luân Công Và Bức Hại Của Trung Cộng</p>
+			<p data-audio="a/42-guren-duitian-fashi.mp3">AUDIO 42: Khái Niệm Về Trời Của Cổ Nhân Và Không Tùy Tiện Phát Thệ Với Trời</p>
+			<p data-audio="a/41-pohai-flg-weifa.mp3">AUDIO 41: Bức Hại Pháp Luân Công Là Vi Phạm Pháp Luật và Pháp Luân Công Không Phải Là X Giáo</p>
+			<p data-audio="a/40-cg-pohai-quntishijian.mp3">AUDIO 40: Trung Cộng Bức Hại Pháp Luân Công-Dẫn Nhập Từ Các Sự Kiện Quần Chúng</p>
+			<p data-audio="a/39-pohai-flg-masanjia-zuie.mp3">AUDIO 39: Bức Hại Pháp Luân Công-Tội Ác Của Mã Tam Gia</p>
+			<p data-audio="a/38-flg-shenqi-kexue.mp3">AUDIO 38: Sự Thần Kỳ Của Pháp Luân Công Đứng Từ Góc Độ Khoa Học</p>
+			<p data-audio="a/37-free-door-soft.mp3">AUDIO 37: Cách Vượt Tường Lửa Và Phần Mềm Freegate.</p>
+			<p data-audio="a/36-changchun-chabo-huiyi.mp3">AUDIO 36: Hồi Ức Của Người May Mắn Sống Sót Trong Sự Kiện Chèn Sóng Truyền Hình Ở Trường Xuân.</p>
+			<p data-audio="a/35-yuwenyi-wuguan.mp3">AUDIO 35: Làm Người Không Liên Quan Với Ôn Dịch.</p>
+			<p data-audio="a/34-changchun-tv-play.mp3">AUDIO 34: Sự Kiện Chèn Sóng Truyền Hình Ở Trường Xuân.</p>
+			<p data-audio="a/33-inter-block-shanghai.mp3">AUDIO 33: Tác Hại Của Việc Phong Tỏa Mạng Dẫn Dến Cho Người Trung Quốc.</p>
+			<p data-audio="a/32-tam-zifen-zaojia.mp3">AUDIO 32: Tự Thiêu Thiên An Môn Dàn Dựng.</p>
+			<p data-audio="a/31-falungong-tedian.mp3">AUDIO 31: Đặc Điểm Công Pháp Của Pháp Luân Công</p>
+			<p data-audio="a/30-zhonggongneidou-tanguan.mp3">AUDIO 30: Trung Cộng Đấu Đá Nội Bộ Và Tham Quan Trăm Triệu</p>
+			<p data-audio="a/29-jiuzizhenyan-kangbingdu.mp3">AUDIO 29: Niệm 9 Chữ Chân Ngôn Có Thể Chống Lại Virus Trung Cộng</p>
+			<p data-audio="a/28-kangri-zhenxiang.mp3">AUDIO 28: Chân Tướng Kháng Nhật</p>
+			<p data-audio="a/27-jiangzemin-maiguo.mp3">AUDIO 27: Giang Trạch Dân Bán Rẻ Lãnh Thổ Đất Nước</p>
+			<p data-audio="a/26-quanshan.mp3">AUDIO 26: Câu Chuyện Khuyến Thiện</p>
+			<p data-audio="a/25-wuxingxueqi-mimi.mp3">AUDIO 25: Bí Mật Của Lá Cờ Máu 5 Sao</p>
+			<p data-audio="a/24-wushenlun-zaobao.mp3">AUDIO 24: Rời Khỏi Vô Thần Luận, Bức Hại Phật Pháp Bị Quả Báo</p>
+			<p data-audio="a/23-dushipin-fanlan.mp3">AUDIO 23: Thực Phẩm Độc Tràn Lan</p>
+			<p data-audio="a/22-huanjing-wuran.mp3">AUDIO 22: Hoàn Cảnh Ô Nhiễm</p>
+			<p data-audio="a/21-jiaoyuzhenxiang.mp3">AUDIO 21: Chân Tướng Về Giáo Dục</p>
+			<p data-audio="a/20-jingjizhenxiang-fangzi.mp3">AUDIO 20: Chân Tướng Nền Kinh Tế TQ (nhà đất)</p>
+			<p data-audio="a/19-santuifangfa-jiuzizhenyan.mp3">AUDIO 19: Phương Pháp Tam Thoái & 9 Chữ Chân Ngôn (ngắn)</p>
+			<p data-audio="a/18-zhonggonghuozhaizhenxiang.mp3">AUDIO 18: Trung Cộng Mổ Cướp Nội Tạng</p>
+			<p data-audio="a/17-zhonggongsharenlishi.mp3">AUDIO 17: Lịch sử giết người của Đảng Cộng sản.</p>
+			<p data-audio="a/16-xiangmakesi-fashi-yiweishenme.mp3">AUDIO 16: Thề Với Marx_ Điều Đó Hàm Nghĩa Gì?</p>
+			<p data-audio="a/14-santui-fangfa.mp3">AUDIO 14: Phương pháp Tam thoái</p>
+			<p data-audio="a/13-kexue-yuyan-tedawenyi.mp3">AUDIO 13: Dự Ngôn và Khoa Học : Đại Ôn Dịch.</p>
+			<p data-audio="a/12-weishenme-yaosantui.mp3">AUDIO 12: Vì sao phải tam thoái.</p>
+			<p data-audio="a/11-makesi-sadanjiao.mp3">AUDIO 11: Marx theo sa tăng giáo</p>
+			<p data-audio="a/9-zifen-zhenxiang.mp3">AUDIO 9: BẢN THẢO SỰ THẬT TỰ THIÊU</p>
+			<p data-audio="a/8-luomadibo-wenyi.mp3">AUDIO 8: Dịch bệnh ở Đế Quốc La Mã</p>
+			<p data-audio="a/7-fldf-qubingjianshen.mp3">AUDIO 7: Hiệu quả của Pháp Luân Công về trừ bệnh khỏe thân</p>
+			<p data-audio="a/6-liubowen-beiji.mp3">AUDIO 6: Lưu Bá Ôn bia ký - Cách tốt để phòng tránh ôn dịch.</p>
+			<p data-audio="a/5-qingchaoshiyan.mp3">AUDIO 5: Khuyên thoái - lời thề của Cố Hạo triều Thanh</p>
+			<p data-audio="a/4-juechufengsheng.mp3">AUDIO 4: Đại Pháp Hồng Truyền - Chân tướng tự thiêu - câu chuyện Tạ Tú Phân</p>
+			<p data-audio="a/3-cangzishi_v1_a.mp3">AUDIO 3: Khuyên thoái - Tàng Tự Thạch
+				<p data-audio="a/2-wuhanfeiyan-l-1.mp3">AUDIO 2: Niệm 9 chữ vàng khỏi bệnh Viêm phổi Vũ Hán V1
+					<p data-audio="a/2-2wuhanfeiyan-s.mp3">AUDIO 2: Niệm 9 chữ vàng khỏi bệnh Viêm phổi Vũ Hán V2
+						<p data-audio="a/1-yinmanwuhanfeiyan-s.mp3">AUDIO 1: Trung Cộng che dấu Tình hình Viêm phổi Vũ Hán
+							<p data-audio="a/0-20201202-zhuanan-phone.mp3">AUDIO 0: Kịch bản
+							</div>
+
+
+
+
+						</div>
+
+						<script src="jquery-1.12.4.min.js"></script>	
+						<script type="text/javascript">
+
+
+							$(document).ready( function(){
+
+								$("#a1 p").click( function(){							
+									var mp3 = $(this).attr("data-audio");
+									$("#a1 p").removeClass("act");
+									$(this).addClass("act");
+									var audio = $("#a3 audio");
+									audio.attr("src",mp3);
+									audio[0].play();
+									
+								});
+
+								$("#a2 p").click( function(){
+									var name = $(this).text();								
+									var mp3 = $(this).attr("data-audio");
+
+				// $.get(txt, function(data){
+				// 	$("#a4 pre").text(data);
+				// });				
+				$("#a2 p").removeClass("act");
+				$(this).addClass("act");
+
+				var audio = $("#a3 audio");
+				audio.attr("src",mp3);
+				audio[0].play();
+				var txt = mp3.replace("a/", "c/").replace(".mp3", ".mp3.txt");
+				console.log(txt);
+				$.get(txt, function(data){
+					$("#a4").html(data);
+				});
+			});
+
+							})
+						</script>
+
+
+
+					</body>
+					</html>
+

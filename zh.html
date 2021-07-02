@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Audio</title>
+	<style>
+	body{ font-family: Arial; background: #333333; }
+	#container{ max-width: 1200px; margin: 0 auto; }
+	#a1{ display: flex; flex-wrap: wrap; }
+	#a1 p{
+		flex: 25%;
+		padding: 15px 0;
+		text-align: center;
+		font-weight: bold;
+		cursor: pointer;
+		box-sizing: border-box;
+		border: 1px solid #333;
+		color: #fff;
+		margin: 0;
+		background: #ff66cc;
+
+	}
+	#a1 p.act , #a2 p.act , #a1 p:hover{
+		background: #0066ff; color: #fff;
+	}
+	#a2{  display: flex; flex-wrap: wrap; }
+	#a2 p{
+		flex: 50%;
+		padding: 15px 0;
+		text-align: center;
+		font-weight: bold;
+		cursor: pointer;
+		box-sizing: border-box;
+		border: 1px solid #333;
+
+		margin: 0;
+		background: #f7c4d0;
+	}
+	#a3{ text-align: justify; background: #ccc; padding: 10px; line-height: 26px; font-size: 16px; overflow-y: scroll; height: 300px; }
+
+</style>
+</head>
+<body>
+
+	<div id="container">
+<!-- 		<div id="a1">
+			<p data-audio="b/greetings_1-1-1.mp3">Câu chào1-1</p>
+			<p data-audio="b/greetings_1-1-2.mp3">Câu chào1-2</p>
+			<p data-audio="b/greetings_1-1-3.mp3">Câu chào1-3</p>
+			<p data-audio="b/greetings_1-1-4.mp3">Câu chào1-4</p>
+			<p data-audio="b/greetings_2-1-1.mp3">Câu chào2-1</p>
+			<p data-audio="b/greetings_2-1-2.mp3">Câu chào2-2</p>
+			<p data-audio="b/greetings_2-1-3.mp3">Câu chào2-3</p>
+			<p data-audio="b/greetings_2-1-4.mp3">Câu chào2-4</p>
+			<p data-audio="b/greetings_3-1-1.mp3">Câu chào3-1</p>
+			<p data-audio="b/greetings_3-1-2.mp3">Câu chào3-2</p>
+			<p data-audio="b/greetings_3-1-3.mp3">Câu chào3-3</p>
+			<p data-audio="b/greetings_3-1-4.mp3">Câu chào3-4</p>	
+		</div> -->
+
+	<div id="a3">
+			<audio controls  src=""></audio>
+			<div id="a4"></div>
+		</div>
+
+		<div id="a2">
+
+			<p data-audio="a/0-20201202-zhuanan-phone.mp3">廣播稿0：專案電話短稿</p>
+			<p data-audio="a/1-yinmanwuhanfeiyan-s.mp3">廣播稿1：隱瞞武漢肺炎
+			</p>
+			<p data-audio="a/2-2wuhanfeiyan-s.mp3">廣播稿2：武漢肺炎患者念九字真言康復實例-董宇紅篇 V2</p>
+			<p data-audio="a/2-wuhanfeiyan-l-1.mp3">廣播稿2：武漢肺炎患者念九字真言康復實例 V1</p>
+			<p data-audio="a/3-cangzishi_v1_a.mp3">廣播稿3：藏字石切入勸三退</p>
+			<p data-audio="a/4-juechufengsheng.mp3">廣播稿4：絕處逢生謝秀芬故事切入大法洪傳和自焚真相</p>
+			<p data-audio="a/5-qingchaoshiyan.mp3">廣播稿5：清朝誓言切入劝退稿</p>
+			<p data-audio="a/6-liubowen-beiji.mp3">廣播稿6：劉伯溫碑記</p>
+			<p data-audio="a/7-fldf-qubingjianshen.mp3">廣播稿7：法輪功祛病健身有奇效</p>
+			<p data-audio="a/8-luomadibo-wenyi.mp3">廣播稿8：羅馬帝國瘟疫稿</p>
+			<p data-audio="a/9-zifen-zhenxiang.mp3">廣播稿9：自焚真相</p>
+			<p data-audio="a/11-makesi-sadanjiao.mp3">廣播稿11：馬克思信撒旦教</p>
+			<p data-audio="a/12-weishenme-yaosantui.mp3">廣播稿12：為什麼要三退</p>
+			<p data-audio="a/13-kexue-yuyan-tedawenyi.mp3">廣播稿13：科學與預言交匯-特大瘟疫箭在弦上</p>
+			<p data-audio="a/14-santui-fangfa.mp3">廣播稿14：三退方法</p>
+			<p data-audio="a/16-xiangmakesi-fashi-yiweishenme.mp3">廣播稿16：向馬克思發誓意味著什麼</p>
+			<p data-audio="a/17-zhonggongsharenlishi.mp3">廣播稿17：共產黨殺人歷史</p>
+			<p data-audio="a/18-zhonggonghuozhaizhenxiang.mp3">廣播稿18：中共活摘器官真相</p>
+			<p data-audio="a/19-santuifangfa-jiuzizhenyan.mp3">廣播稿19：三退方法和九字真言</p>
+			<p data-audio="a/20-jingjizhenxiang-fangzi.mp3">廣播稿20：經濟真相稿-房子</p>
+			<p data-audio="a/21-jiaoyuzhenxiang.mp3">廣播稿21：教育真相稿</p>
+			<p data-audio="a/22-huanjing-wuran.mp3">廣播稿22：環境污染</p>
+			<p data-audio="a/23-dushipin-fanlan.mp3">廣播稿23：毒食品氾濫</p>
+			<p data-audio="a/24-wushenlun-zaobao.mp3">廣播稿24：遠離無神論加迫害佛法遭報</p>
+			<p data-audio="a/25-wuxingxueqi-mimi.mp3">廣播稿25：五星血旗的風水秘密</p>
+			<p data-audio="a/26-quanshan.mp3">廣播稿26：勸善故事</p>
+			<p data-audio="a/27-jiangzemin-maiguo.mp3">廣播稿27：江澤民出賣國土</p>
+			<p data-audio="a/28-kangri-zhenxiang.mp3">廣播稿28：抗日真相</p>
+			<p data-audio="a/29-jiuzizhenyan-kangbingdu.mp3">廣播稿29：念九字真言可抵禦中共病毒</p>
+			<p data-audio="a/30-zhonggongneidou-tanguan.mp3">廣播稿30：中共內鬥與億元貪官</p>
+			<p data-audio="a/31-falungong-tedian.mp3">廣播稿31：法輪功的功法特點</p>
+			<p data-audio="a/32-tam-zifen-zaojia.mp3">廣播稿32：天安門自焚造假</p>
+			<p data-audio="a/33-inter-block-shanghai.mp3">廣播稿33：網絡封鎖給中國人帶來的傷害</p>
+			<p data-audio="a/34-changchun-tv-play.mp3">廣播稿34：長春電視插播</p>
+			<p data-audio="a/35-yuwenyi-wuguan.mp3">廣播稿35：做與瘟疫無關的人</p>
+			<p data-audio="a/36-changchun-chabo-huiyi.mp3">廣播稿36：長春插播倖存者的回憶</p>
+			<p data-audio="a/37-free-door-soft.mp3">廣播稿37：翻牆方法自由門軟件（短）</p>
+			<p data-audio="a/38-flg-shenqi-kexue.mp3">廣播稿38：法輪功的神奇-科學角度</p>
+			<p data-audio="a/39-pohai-flg-masanjia-zuie.mp3">廣播稿39：迫害法輪功-馬三家的罪惡</p>
+			<p data-audio="a/40-cg-pohai-quntishijian.mp3">廣播稿40：中共對法輪功的迫害-人群事件切入</p>
+			<p data-audio="a/41-pohai-flg-weifa.mp3">廣播稿41：迫害法輪功違法和法輪功不是某教</p>
+			<p data-audio="a/42-guren-duitian-fashi.mp3">廣播稿42：古人對“天”的概念和不隨便對天發誓</p>
+			<p data-audio="a/43-falungong-425-720.mp3">廣播稿43：法輪功的傳出，425，720</p>
+			<p data-audio="a/44-425flg-hepingshangfang-yuanyin.mp3">廣播稿44：4.25萬名法輪功學員和平上訪的原因和過程</p>
+			<p data-audio="a/45-meifo-zaoebao.mp3">廣播稿45：滅佛遭惡報</p>
+			<p data-audio="a/46-610zhenmianmu.mp3">廣播稿46：610的真实面目</p>
+			<p data-audio="a/47-flg-shiren-shentijiankang.mp3">广播稿47：炼法轮功使人身体健康</p>
+			<p data-audio="a/48-zg-no-zg.mp3">廣播稿48：中共不等於中國</p>
+
+		</div>
+
+
+	</div>
+
+	<script src="jquery-1.12.4.min.js"></script>	
+		<script type="text/javascript">
+
+
+							$(document).ready( function(){
+
+								$("#a1 p").click( function(){							
+									var mp3 = $(this).attr("data-audio");
+									$("#a1 p").removeClass("act");
+									$(this).addClass("act");
+									var audio = $("#a3 audio");
+									audio.attr("src",mp3);
+									audio[0].play();
+									
+								});
+
+								$("#a2 p").click( function(){
+									var name = $(this).text();								
+									var mp3 = $(this).attr("data-audio");
+
+				// $.get(txt, function(data){
+				// 	$("#a4 pre").text(data);
+				// });				
+				$("#a2 p").removeClass("act");
+				$(this).addClass("act");
+
+				var audio = $("#a3 audio");
+				audio.attr("src",mp3);
+				audio[0].play();
+				var txt = mp3.replace("a/", "d/").replace(".mp3", ".mp3.txt");
+				console.log(txt);
+				$.get(txt, function(data){
+					$("#a4").html(data);
+				});
+			});
+
+							})
+						</script>
+
+
+	
+</body>
+</html>
+
